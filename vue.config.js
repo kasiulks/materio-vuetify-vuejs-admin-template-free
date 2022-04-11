@@ -1,6 +1,8 @@
 const { mergeSassVariables } = require('@vuetify/cli-plugin-utils')
 
-module.exports = {
+module.exports = {devServer: {
+    disableHostCheck: true,
+  },
   publicPath: process.env.NODE_ENV === 'production' ? '/materio-vuetify-vuejs-admin-template-free/demo' : '/',
   lintOnSave: false,
   transpileDependencies: ['vuetify'],
